@@ -1,0 +1,28 @@
+<h1>Welcome to my travel site</h1>
+<p>This is a work in progress</p>
+
+<% @homestate %>
+<p><%= @homestate %></p>
+
+<ul>
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+<% end %>
+</ul>
+
+<!-- <p>
+	<%#= image_tag 'img-test.jpg', alt: 'Test-image', id: 'tein_flex', class: 'home_pic', height: '400' %>
+</p>
+ -->
+
+ <%# @pictures.each do |pic| %>
+ <!--<p>
+ 	<%#= image_tag pic %>
+ </p>-->
+ <%# end %>
+
+ <% @pictures_hash.each do |name, descript| %>
+ <p>
+ 		<%= image_tag name, alt: descript %>
+ </p>
+ 	<% end %>
